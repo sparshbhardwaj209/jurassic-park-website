@@ -1,0 +1,98 @@
+/* Navigation menu */
+#navbar{
+    flex-direction: column;
+}
+
+/* #navbar::before{
+    height: 500px;
+    width: 100%;
+} */
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+
+/* Home section */
+
+#home{
+    height: 400px;
+    padding: 3px 28px;
+}
+
+#home::before{
+    height: 450px;
+    /* width: 200px; */
+    /* background-position: center; */
+}
+
+#home h1{
+    font-size: 2rem;
+}
+
+#home h3{
+    font-size: 1rem;
+}
+
+
+#home p{
+    font-size: 13px;
+}
+
+/* Event section */
+#events{
+    display: flex;
+    flex-direction: column;
+}
+
+#events .box{
+    margin: 2px 15px;
+    padding: 14px;
+    margin-bottom: 20px;
+}
+
+#events .box img{
+    width: 200px;
+    height: 300px;
+    padding: 2px 6px;
+    height: auto;
+}
+
+/* Gallary Section */
+#gallary{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#gallary img{
+    width: 230px;
+    padding: 2px 6px;
+    height: auto;
+}
+
+/* About-us Section */
+
+/* Contact us Section */
+contact-box form{
+    width: 80%;
+}
+
+#contact::before{
+    height: 400px;
+    width: auto;
+    /* background-position: center; */
+}
+
+/* Footer Section */
+
+/* Utility Section */
+.h-primary{
+    font-size: 24px;
+}
+
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}

@@ -1,0 +1,272 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Navigation Bar List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    background-color: rgb(61, 55, 61);
+    text-decoration: underline;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 454px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url(../img/bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 475px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 500;
+    font-size: 3rem;
+    /* z-index: 1; */
+}
+
+#home h3{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2rem;
+    font-family:  'Baloo Bhai 2', cursive;
+    /* z-index: 1; */
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family:  'Baloo Bhai 2', cursive;
+    /* z-index: 1; */
+}
+
+/* Event Section */
+/* #all-events{
+    position: relative;
+} */
+
+#events{
+    display: flex;
+    justify-content: center;
+    /* margin: 10px; */
+    /* z-index: 1; */
+}
+
+#events .box{
+    /* display: flex; */
+    border: 2px solid brown;
+    margin: 25px 15px;
+    padding: 15px;
+    border-radius: 23px;
+    background-color: white;
+    margin-bottom: 20px;
+    /* align-items: center; */
+}
+
+#events .box img{
+    display: block;
+    margin: auto;
+    height: 300px;
+    /* width: 423px; */
+}
+
+#events .box .p{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+}
+
+/* client section */
+#gallary-section{
+    position: relative;
+}
+
+#gallary{
+    display: flex;
+     justify-content: center;
+}
+
+#gallary .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid brown;
+    margin: 25px 15px;
+    padding: 15px;
+    border-radius: 23px;
+    background-color: #f3efef;
+    margin-bottom: 20px;
+}
+
+#gallary .box img{
+    display: block;
+    margin: auto;
+    height: 227px;
+    width: 250px;
+}
+
+/* About-us section */
+#about-us{
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+#abbout-us p{
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+#contact-box button{
+    width: 100%;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    height: 20px;
+    justify-content: space-between;
+}
+
+
+.footer-left {
+    float : left;
+}
+
+.footer-right {
+    float:right;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    color: red;
+    font-size: 3rem;
+    padding: 12px;
+    font-family:  'Baloo Bhai 2', cursive;
+    z-index: 1;
+}
+
+.h-secondary{
+    font-size: 1.87rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.center{
+    text-align: center;
+}
+  
+.btn{
+    color: white;
+    padding: 6px 20px;
+    background-color: #454343;
+    border: 2px solid white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+  
+.zoom:hover{
+    transform: scale(1.3);
+}
